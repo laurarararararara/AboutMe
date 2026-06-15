@@ -72,3 +72,37 @@ themeToggle?.addEventListener('click', () => {
 document.getElementById('print-btn')?.addEventListener('click', () => {
   window.print();
 });
+
+/* ── Skill bar animation ── */
+const skillBarObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.skill-bar').forEach((bar, i) => {
+          setTimeout(() => bar.classList.add('is-animated'), i * 100);
+        });
+        skillBarObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.2 }
+);
+
+document.querySelectorAll('.skill-group').forEach((group) => {
+  skillBarObserver.observe(group);
+});
+
+/* ── Back-to-top button ── */
+const backToTop = document.getElementById('back-to-top');
+if (backToTop) {
+  window.addEventListener(
+    'scroll',
+    () => {
+      backToTop.classList.toggle('is-visible', window.scrollY > 400);
+    },
+    { passive: true }
+  );
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}

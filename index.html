@@ -8,6 +8,7 @@
       content="惠曼 · 测试开发工程师 · C 端 UI/接口自动化 · CI 与稳定性治理"
     />
     <title>惠曼 · 测试开发</title>
+    <script data-goatcounter="https://hm-resume.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -18,7 +19,7 @@
         <div class="avatar" aria-hidden="true">HM</div>
         <h1 class="name">惠曼</h1>
         <p class="role">测试开发工程师</p>
-        <p class="tagline">C 端专项建设 · 自动化 · 质量工程</p>
+        <p class="tagline">UI 自动化专项 · 自动化 · 质量工程</p>
       </div>
 
       <nav class="nav">
@@ -50,8 +51,7 @@
         <div class="hero-banner">
           <p class="lead">
             滴滴出行机票 C 端测开 Owner（2022.01–2026.05，已离职）。擅长 C 端 UI +
-            接口自动化、CI 门禁与 flaky 稳定性治理；2025 绩效 A。求职方向：测试开发 ·
-            C 端专项建设。
+            接口自动化、CI 门禁与 flaky 稳定性治理；2025 绩效 A。求职方向：测试开发。
           </p>
           <div class="status-row">
             <span class="status-pill">2025 绩效 A</span>
@@ -81,15 +81,15 @@
 
         <div class="summary-grid">
           <div class="summary-block">
-            <h3>C 端专项建设</h3>
+            <h3>UI 自动化专项</h3>
             <ul>
               <li>
-                乘客 App + 微信/支付宝小程序三端 UI 自动化；Airtest，common/util 分层，复用率
+                乘客 App + 微信/支付宝小程序三端 UI 自动化，基于 Trae IDE 生成；Airtest，common/util 分层，复用率
                 85%+
               </li>
-              <li>CI 变更触发回归、D-Chat 推送；2025 年下半年拦截有效问题 20+</li>
+              <li>CI 变更触发回归、D-Chat 推送；拦截有效问题 40+，线上 bug 拦截率 10%</li>
               <li>
-                失败分类、OCR / 智能定位、badcase 回流；探索 RAG + Cursor Agent Skills
+                失败分类、OCR / 智能定位、badcase 回流；探索 RAG + 内部工具 AI 辅助实践
               </li>
             </ul>
           </div>
@@ -120,16 +120,17 @@
           <p class="subtitle">高级测试开发（D6）· 机票 C 端</p>
           <ul>
             <li>
-              负责机票 C 端 UI 自动化 160+ 用例，Airtest 三端统一，common/util 分层；稳定性
+              负责机票 C 端 UI 自动化 160+ 用例，基于 Trae IDE 生成，Airtest 三端统一，common/util 分层；稳定性
               85%→96%，OCR 与 badcase 回流
             </li>
             <li>
-              接口自动化 500+；CI 回归 8h→3h；2025 年下半年拦截有效问题 20+
+              接口自动化 500+，覆盖率与稳定性持续提升；CI 回归 8h→3h；拦截有效问题 40+，线上 bug 拦截率 10%
             </li>
-            <li>机票 UI/接口自动化专项 Owner，协调约 6 人；2025 绩效 A</li>
+            <li>机票 UI/接口自动化专项 Owner，协调约 6 人</li>
             <li>
-              探索 AI 用例生成（RAG 分层建库、金标 mock）及 Cursor Agent Skills
+              探索 AI 用例生成（RAG 分层建库）及内部工具 AI 辅助实践
             </li>
+            <li>组内横向建设，新人考核管理</li>
           </ul>
           <div class="honors">
             <span class="chip">2022 十佳 QAO</span>
@@ -306,12 +307,36 @@
               <span>Linux</span>
             </div>
           </div>
-          <div class="skill-group">
-            <h3>AI 探索</h3>
-            <div class="chips">
-              <span>RAG / AI 用例</span>
-              <span>Cursor Agent Skills</span>
+        </div>
+
+        <div class="skill-pipeline">
+          <h3>AI 实现生成用例 · 四步闭环</h3>
+          <div class="pipeline-steps">
+            <div class="step">
+              <span class="num">1</span>
+              <h4>准备上下文</h4>
+              <p>需求、接口文档、历史用例与 badcase <strong>分层建库</strong>，生成前检索匹配资料，避免 AI 偏题</p>
             </div>
+            <div class="step">
+              <span class="num">2</span>
+              <h4>约束生成</h4>
+              <p>固定团队用例模板，要求写 <strong>依据来源</strong>（需求/接口字段），覆盖主流程/异常/边界</p>
+            </div>
+            <div class="step">
+              <span class="num">3</span>
+              <h4>生成后收口</h4>
+              <p><strong>规则校验</strong>（字段是否在接口文档、预期是否站得住）+ <strong>相似度去重</strong></p>
+            </div>
+            <div class="step">
+              <span class="num">4</span>
+              <h4>评测与闭环</h4>
+              <p>看覆盖率、正确率、重复率、可自动执行比例；通过进用例库，能脚本化转自动化；错误样本回流知识库与 prompt</p>
+            </div>
+          </div>
+          <div class="chips" style="margin-top:1rem">
+            <span>RAG 分层建库</span>
+            <span>内部工具 + AI</span>
+            <span>AI 用例生成</span>
           </div>
         </div>
       </section>
@@ -343,18 +368,20 @@
           </li>
           <li>
             <span class="label">意向</span>
-            <span>测试开发 · C 端专项建设 · 北京</span>
+            <span>测试开发</span>
           </li>
         </ul>
       </section>
 
       <footer class="site-footer">
         <p>© 2026 惠曼 · 个人简历站</p>
-        <p>
-          <a href="mailto:acehuiman@163.com">acehuiman@163.com</a>
+        <p class="visitor-counter">
+          <img src="https://hm-resume.goatcounter.com/counter.svg" alt="Visitors" loading="lazy" />
         </p>
       </footer>
     </main>
+
+    <button type="button" class="back-to-top" id="back-to-top" aria-label="回到顶部">↑</button>
 
     <script src="main.js"></script>
   </body>
